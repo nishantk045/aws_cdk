@@ -15,7 +15,4 @@ class MyCdkAppStack(cdk.Stack):
 
         bucket = s3.Bucket(self,
                            "MyFirstBucket",
-                           versioned=True,
-                           removal_policy=core.RemovalPolicy.DESTROY,
-                           auto_delete_objects=True
-                           )
+                           versioned=True,)
